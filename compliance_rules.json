@@ -1,0 +1,53 @@
+{
+  "rules": [
+    {
+      "id": "GDPR-001",
+      "framework": "GDPR",
+      "description": "Data Processing Consent",
+      "required_clauses": ["consent", "data processing", "personal data"],
+      "keywords": ["explicit consent", "opt-in", "data collection"],
+      "risk_level": "HIGH",
+      "validation_regex": "\\b(consent|opt-?in)\\b.*\\b(data|information)\\b"
+    },
+    {
+      "id": "GDPR-002",
+      "framework": "GDPR",
+      "description": "Data Subject Rights",
+      "required_clauses": ["right to access", "right to erasure", "data portability"],
+      "keywords": ["subject rights", "data access", "deletion request"],
+      "risk_level": "HIGH"
+    },
+    {
+      "id": "HIPAA-001",
+      "framework": "HIPAA",
+      "description": "PHI Protection",
+      "required_clauses": ["protected health information", "phi", "medical records"],
+      "keywords": ["confidentiality", "security measures", "health data protection"],
+      "risk_level": "CRITICAL"
+    },
+    {
+      "id": "HIPAA-002",
+      "framework": "HIPAA",
+      "description": "Security Safeguards",
+      "required_clauses": ["security measures", "access controls", "encryption"],
+      "keywords": ["safeguards", "protection", "security controls"],
+      "risk_level": "CRITICAL"
+    },
+    {
+      "id": "ISO27001-001",
+      "framework": "ISO 27001",
+      "description": "Information Security Policy",
+      "required_clauses": ["security policy", "risk assessment", "controls"],
+      "keywords": ["security measures", "risk management", "security controls"],
+      "risk_level": "MEDIUM"
+    },
+    {
+      "id": "ISO27001-002",
+      "framework": "ISO 27001",
+      "description": "Access Control",
+      "required_clauses": ["access control", "authentication", "authorization"],
+      "keywords": ["access management", "privileges", "user access"],
+      "risk_level": "HIGH"
+    }
+  ]
+}
